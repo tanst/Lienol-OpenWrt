@@ -119,7 +119,9 @@ jobs:
         EOF
                 
         # 打开适用于VMware的VM Tools:
+        cat >> .config <<EOF
         CONFIG_PACKAGE_open-vm-tools=y
+        EOF
         
         # 编译传统固件:
         # cat >> .config <<EOF
